@@ -1,0 +1,32 @@
+// 1- Faça uma função em C/C++ que calcule a área de um retângulo e tenha o seguinte protótipo:
+double calculaArea1(double base, double altura);
+Depois construa a main que usa essa função
+
+#include <stdio.h>
+
+// Protótipo da função que calcula a área do retângulo
+double calculaArea1(double base, double altura);
+
+// Definição da função que calcula a área
+double calculaArea1(double base, double altura) {
+    return base * altura;
+}
+
+int main() {
+    double base, altura, area;
+    
+    // Solicita ao usuário para inserir os valores da base e altura
+    printf("Digite o valor da base do retângulo: ");
+    scanf("%lf", &base);
+    
+    printf("Digite o valor da altura do retângulo: ");
+    scanf("%lf", &altura);
+    
+    // Calcula a área do retângulo
+    area = calculaArea1(base, altura);
+    
+    // Exibe a área calculada
+    printf("A área do retângulo é: %.2lf\n", area);
+    
+    return 0;
+}
